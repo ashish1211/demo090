@@ -17,7 +17,7 @@
     start:
       github:
         status: 'pending'
-        status-url: "https://zuul.zuul-ci.org/zuul/status.html"
+        status-url: "http://localhost:9000/t/quickstart/status"
         comment: false
     success:
       github:
@@ -68,7 +68,7 @@
     start:
       github:
         status: 'pending'
-        status-url: "https://zuul.zuul-ci.org/zuul/status.html"
+        status-url: "http://localhost:9000/t/quickstart/status"
         comment: false
     success:
       github:
