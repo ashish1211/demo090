@@ -26,7 +26,6 @@
     failure:
       github:
         status: 'failure'
-      	  
 - pipeline:
     name: gate
     description: |
@@ -84,8 +83,7 @@
         comment: true
       
     window-floor: 20
-    window-increase-factor: 2
-	
+    window-increase-factor: 2	
 - pipeline:
     name: post
     post-review: true
@@ -105,8 +103,7 @@
     failure:
       github:
         status: 'failure'
-        comment: true
-      
+        comment: true   
 - pipeline:
     name: tag
     description: This pipeline runs jobs in response to any tag event.
