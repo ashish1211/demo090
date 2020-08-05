@@ -26,8 +26,7 @@
     failure:
       github:
         status: 'failure'
-      sqlreporter:
-	  
+      sqlreporter:	  
 - pipeline:
     name: gate
     description: |
@@ -86,7 +85,6 @@
       sqlreporter:
     window-floor: 20
     window-increase-factor: 2
-
 - pipeline:
     name: post
     post-review: true
@@ -101,7 +99,6 @@
       sqlreporter:
     failure:
       sqlreporter:
-
 - pipeline:
     name: tag
     description: This pipeline runs jobs in response to any tag event.
