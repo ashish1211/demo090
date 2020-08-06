@@ -82,7 +82,25 @@
         comment: true
       
     window-floor: 20
-    window-increase-factor: 2
-
+    window-increase-factor: 2 
+- pipeline:
+    name: post
+    post-review: true
+    description: This pipeline runs jobs that operate after each change is merged.
+    manager: independent
+    precedence: low
+    trigger:
+      github:
+        - event: push
+          ref: ^refs/heads/.*$
+    success:
+      github:
+        status: 'success'
+        merge: true
+        comment: true
       
-
+    failure:
+      github:
+        status: 'failure'
+        comment: true
+   
